@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação com links</title>
+</head>
+
+<body>
+    <header>
+        <h1>MENU DE NAVEGAÇÃO</h1>
+        <nav>
+            <ul>
+                <li onclick="menuHome()" style="margin-bottom: 20px;" id="Home">Home</li>
+                <li onclick="menuSobre()" style="margin-bottom: 20px;" id="Sobre">Sobre</li>
+                <li onclick="menuCont()" style="margin-bottom: 20px;" id="Contato">Contato</li>
+                <li onclick="menuProd()" style="margin-bottom: 20px;" id="Produtos">Produtos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function menuHome() {
+            var home = document.getElementById("Home");
+            home = window.open("https://www.figma.com/");
+        }
+
+        function menuSobre() {
+            var sobre = document.getElementById("Sobre");
+            sobre = window.open("https://www.canva.com/");
+        }
+
+        function menuCont() {
+            var contato = document.getElementById("Contato");
+            contato = window.open("https://github.com/victoriafe-sa");
+        }
+
+        function menuProd() {
+            var produtos = document.getElementById("Produtos");
+            produtos = window.open("https://pixabay.com/pt/");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add video</title>
+</head>
+
+<body>
+    <button onclick="playVideo()">Iniciar video</button>
+
+    <video id="video" src="video.mp4" width="500"></video>
+
+    <script>
+        function playVideo() {
+
+            const video = document.getElementById('video');
+            if (video.paused == true) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    </script>
+</body>
+</html>

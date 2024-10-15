@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar e Mostrar Elemento com um Checkbox</title>
+</head>
+
+<body>
+    <input onclick="toggleItem()" type="checkbox" id="checkbox" />
+    <label id="item" style="display: none;">Maçã</label>
+
+    <script>
+        function toggleItem() {
+            var item = document.getElementById("item");
+            if (item.style.display === "none") {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

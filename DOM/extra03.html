@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Comentario</title>
+</head>
+
+<body>
+    <form>
+        <textarea name="msg" id="mensagem" placeholder="Mensagem"></textarea>
+        <button onclick="envioComent()">Enviar</button>
+    </form>
+
+    <script>
+        function envioComent() {
+            let mensagem = document.getElementById("mensagem");
+            if (mensagem.value == "") {
+                alert("o campo deve ser preenchido!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

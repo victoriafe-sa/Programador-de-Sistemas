@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar estilo ao passe do mouse</title>
+</head>
+
+<body>
+    <p onmouseover="changeTextStyle(this)" onmouseout="resetTextStyle(this)">Texto que ira mudar!</p>
+
+    <script>
+        function changeTextStyle(element) {
+            element.style.color = "purple";
+        }
+
+        function resetTextStyle(element) {
+            element.style.color = "lightblue";
+        }
+    </script>
+</body>
+
+</html>

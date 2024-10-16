@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMA</title>
+</head>
+
+
+<body>
+    <H1>Soma de Valores</H1>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button onclick="adicionarNumero()">Adicionar</button>
+    <p id="resultado"></p>
+
+    <script>
+        let soma = 0;
+
+        function adicionarNumero() {
+            const numeroInput = document.getElementById('numero');
+            const numero = parseInt(numeroInput.value);
+            let resultado = document.getElementById('resultado');
+
+            if (numero!=0) {
+                soma += numero;
+                resultado.textContent = `A soma atual é: ${soma}`;
+                numeroInput.value = ''; // Limpa o campo de entrada
+            } else {
+                resultado.textContent = `Soma encerrada`;
+            }
+        }
+    </script>
+</body>
+</html>

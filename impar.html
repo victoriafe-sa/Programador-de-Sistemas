@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Palíndromo</title>
+</head>
+<STYle>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+</STYle>
+<body>
+    <h1>Verificador se ímpar</h1>
+
+    <label for="numero">Digite um numero:</label>
+    <input type="text" id="numero">
+    <button onclick="verificar()">Verificar se é par</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function verificar() {
+            let numero = document.getElementById("numero").value;
+            let resultado = document.getElementById("resultado");
+
+            if (numero%2!=0) {
+                resultado.textContent = "É ímpar";
+                resultado.style.color = "green";
+            } else {
+                resultado.textContent = "Não é ímpar.";
+                resultado.style.color = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>
